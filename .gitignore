@@ -1,0 +1,5 @@
+*.csv
+*.json
+new_readmoo_user/
+ting/*.csv
+ting/*.json
