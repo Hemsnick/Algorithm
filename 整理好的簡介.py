@@ -1,9 +1,9 @@
 import pymongo
+import pandas as pd
+from pymongo import MongoClient
 MONGO_HOST = '10.2.14.10'
 MONGO_DB = 'kingstone'
 MONGO_COLLETION = 'clean_data'
-from pymongo import MongoClient
-#   http://www.twse.com.tw/exchangeReport/STOCK_DAY?date=20180817&stockNo=2330
 
 def connect_mongo():  #連線資料庫
     global collection
