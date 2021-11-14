@@ -4,13 +4,12 @@ from bs4 import BeautifulSoup
 import requests
 from fake_useragent import UserAgent
 import pandas as pd
-import os
 import time
 
 if not os.path.exists('./new_readmoo_user'):
     os.mkdir('./new_readmoo_user')
 
-client = MongoClient(host='10.2.18.6',port=27017)
+client = MongoClient(host='10.2.14.10',port=27017)
 db = client.userstar
 coll = db.userstar
 
@@ -74,7 +73,7 @@ for up in range(len(BOOKNAME)):
         NUSERSTAR.append(USERSTAR[up])
         readmoo = pd.DataFrame(
             {'ISBN': NISBN, 'BOOKNAME': NBOOKNAME, 'USER': NUSER, 'CONTENT': NCONTENT, 'USERSTAR': NUSERSTAR})
-        readmoo.to_csv("./new_readmoo_user/readmoo_user_1109.csv", encoding='utf-8-sig', index=False)
+        readmoo.to_csv("./new_readmoo_user/readmoo_user_1113.csv", encoding='utf-8-sig', index=False)
     else:
         pass
 
