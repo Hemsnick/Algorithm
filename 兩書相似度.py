@@ -18,7 +18,7 @@ if __name__ == '__main__':
     with Pool(6) as p: # 6 cpu
         s=p.map(similar,arr_all[:num]) # 做上方function
     dict1={}
-    for i in range(len(s)):
+    for i in range(num-10000,num):
         dict1[str(i)]=s[i]
     with open('book_%s.json'%(num),'w') as f:
         f.write(json.dumps(dict1))
