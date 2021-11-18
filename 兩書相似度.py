@@ -8,7 +8,7 @@ def similar(A):
     global arr_all
     s=map(lambda x:(np.dot(A,x) / (np.linalg.norm(A)*np.linalg.norm(x))),arr_all)
     s=np.array(list(s))
-    topK=3
+    topK=5
     top_k_index=s.argsort()[::-1][1:topK+1]
     return top_k_index.tolist()
 
