@@ -7,28 +7,25 @@
 [linebot書籍推薦系統](https://youtu.be/HlQsczxLR7Y)
 
 ```
-Algorithm
+Project
 │ 
 │   
 │
-├───Crawler
-│   │   ├──Kingstone website
-│   │   └──Readmoo website
-│   │
-│   └───ETL
-│       ├── Data Cleaning
-│       ├── Jieba cut
-│       └── MongoDB
-│   
-├───Collaborative Filtering
-│   ├── Data Preprocessing
-│   ├── SnowNLP
-│   └── KNN
-│  
-│  
-└───Natural Language Processing
-    ├── Data Preprocessing
-    ├── TF-IDF with LDA
-    └── Word2Vec
-
+└───Crawler
+    │   Kingstone.json
+    │   Readmoo_comment.json
+    │
+    └─────E T L
+          │   Data_Cleaning.py
+          │   Jieba_cut.py
+          │ 
+          ├────CF 
+          │     Data_Preprocessing.py
+          │     SnowNLP.py
+          │     CF_KNN.py
+          │ 
+          └────NLP
+                Data_Preprocessing.py
+                TFIDF_LDA.py
+                Word2Vec.py
 ```
